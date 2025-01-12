@@ -2,31 +2,35 @@
 import React, { useState, useEffect } from "react";
 
 export default function SpotifyPlayer() {
-  const [data, setData] = useState(null); // State to hold API data
-  const [error, setError] = useState(null); // State to handle errors
-  const [loading, setLoading] = useState(true); // State to indicate loading
+  //   const [data, setData] = useState(null); // State to hold API data
+  //   const [error, setError] = useState<string | null>(null); // State to handle errors
+  //   const [loading, setLoading] = useState(true); // State to indicate loading
 
-  useEffect(() => {
-    async function getData() {
-      try {
-        const response = await fetch(
-          "https://open.spotify.com/playlist/6zCID88oNjNv9zx6puDHKj?si=eJdj1seJSeyMyti4lolzQA"
-        );
+  //   useEffect(() => {
+  //     async function getData() {
+  //       try {
+  //         const response = await fetch(
+  //           "https://open.spotify.com/playlist/6zCID88oNjNv9zx6puDHKj?si=eJdj1seJSeyMyti4lolzQA"
+  //         );
 
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
+  //         if (!response.ok) {
+  //           throw new Error("Failed to fetch data");
+  //         }
 
-        const responseJson = await response.json();
-        setData(responseJson);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    }
-    getData();
-  }, []);
+  //         const responseJson = await response.json();
+  //         setData(responseJson);
+  //       } catch (err) {
+  //         if (err instanceof Error) {
+  //           setError(err.message);
+  //         } else {
+  //           setError("An unknown error occurred");
+  //         }
+  //       } finally {
+  //         setLoading(false);
+  //       }
+  //     }
+  //     getData();
+  //   }, []);
 
   return (
     <>
