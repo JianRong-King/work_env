@@ -33,8 +33,8 @@ export default function SpotifyPlayer() {
   //   }, []);
 
   return (
-    <>
-      <div className=" min-h-64 m-[10%]  flex flex-col justify-center items-center rounded-lg">
+    <div className="flex flex-cols-2">
+      <div className="flex justify-center items-center rounded-lg">
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYoYGBbGKurt?utm_source=generator"
@@ -45,7 +45,7 @@ export default function SpotifyPlayer() {
           loading="lazy"
         ></iframe>
       </div>
-      <div className=" min-h-64 m-[10%]  flex flex-col justify-center items-center rounded-lg">
+      <div className="flex justify-center items-center rounded-lg">
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/playlist/37i9dQZF1DX786ROcOIz84?utm_source=generator"
@@ -56,6 +56,6 @@ export default function SpotifyPlayer() {
           loading="lazy"
         ></iframe>
       </div>
-    </>
+    </div>
   );
 }

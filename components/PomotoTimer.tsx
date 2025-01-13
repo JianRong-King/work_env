@@ -38,8 +38,8 @@ export default function PomotoTimer() {
   const seconds = timeLeft % 60;
 
   return (
-    <div className="border-2 min-h-64 m-[10%] flex justify-center items-center rounded-lg">
-      <div className="m-4 grid grid-cols-1 items-center">
+    <div className="w-1/2 border-2 min-h-64 flex justify-center items-center rounded-lg">
+      <div className=" grid grid-cols-1 items-center">
         <div className="mt-10 mb-20 flex justify-center">
           <h1 className="text-8xl">
             {String(minutes).padStart(2, "0")}:
